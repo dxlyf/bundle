@@ -1,0 +1,35 @@
+{
+  "name": "bundle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --port=5489"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babylonjs/core": "^7.3.0",
+    "@babylonjs/inspector": "^7.3.1",
+    "@babylonjs/loaders": "^7.3.0",
+    "@babylonjs/materials": "^7.3.0",
+    "@google/model-viewer": "^3.5.0",
+    "@hpcc-js/wasm": "^2.16.1",
+    "@types/three": "^0.163.0",
+    "babylonjs": "^7.3.0",
+    "babylonjs-loaders": "^7.3.0",
+    "crypto-js": "^4.2.0",
+    "esbuild": "^0.20.2",
+    "gl-matrix": "^3.4.3",
+    "three": "^0.163.0",
+    "three-gpu-pathtracer": "^0.0.20"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "json-schema-to-typescript": "^13.1.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9"
+  }
+}
