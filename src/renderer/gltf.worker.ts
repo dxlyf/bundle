@@ -32,22 +32,10 @@ self.onmessage = function(e) {
             result.forEach(d=>{
               scene.add(d.scene)
             })
-            let sceneData=scene.toJSON()
-            sceneData.animations??=[]
-            sceneData.images=sceneData.images.map((image:any)=>{
-              if(typeof image==='string'){
-                  return image
-              }
-              if(image.url===undefined){
-                  return {
-                      data:'',
-                      ...image,
-                      url:''
-                  }
-              }
-              return image
-            })
-            self.postMessage({type:'complete',scene:sceneData}) 
+           let sceneData=scene.toJSON()
+        //   let textEncoder=new TextEncoder()
+        ////    let buffer=new Blob([textEncoder.encode()])
+           self.postMessage({type:'complete',scene:sceneData}) 
        }).catch((e)=>{
            self.postMessage({type:'error',error:e+''})
        })
